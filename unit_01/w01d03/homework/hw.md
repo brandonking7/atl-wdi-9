@@ -60,13 +60,33 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+> A To-Do List app has..
+- a scheduler
+- a notification system,
+- a task reminder
+- a simple syncing system
+- a easy to use interface
+
+These attriubutes make the perfect to-do list app. Combined they make an effective easy to use application.
+
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+
+
+> A Photo sharing app has..
+- a brand name
+- a photo upload system
+- a notification system
+- a way to access users photo
+- a simple syncing system
+- a messenger
+- a user profile for saving photo's
+- a timeline for viewing photo's that have been posted
+
+These are commense sense choices that make up some of today's best photo sharing apps. Without theese choices you'd have a pretty boring app.
 
 ### 3. Home Automation Manager
 
@@ -75,7 +95,17 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+> A Home Automation Manager has..
+- a brand name
+- a tutorial on how to use the product
+- a set of smart appliances
+- a notification system,
+- a scheduling system
+- a tracking system
+- a simple syncing system
+- a easy to use interface
+
+These choices combined are neccesary for the simplest home automation manager.
 
 ### 4. Sneaker Store
 
