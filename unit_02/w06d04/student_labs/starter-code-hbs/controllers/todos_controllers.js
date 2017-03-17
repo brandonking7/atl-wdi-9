@@ -26,6 +26,13 @@ router.get('/todos/:id', function(req, res) {
   res.send("Show route is working");
 });
 
+router.get('/', function(req,res) {
+
+  res.render('todos/index', {
+    todos: data.seededTodos
+  });
+
+
  /* CREATE TODO */
 router.post('/', function(req, res){
     var newTodo = {

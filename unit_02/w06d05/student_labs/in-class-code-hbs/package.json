@@ -11,8 +11,9 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "ejs": "^2.4.1",
-    "express": "^4.13.4",
+    "express": "^4.15.2",
     "hbs": "^4.0.0",
+    "method-override": "^2.3.7",
     "morgan": "^1.6.1"
   }
 }

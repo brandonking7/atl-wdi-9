@@ -1,4 +1,5 @@
 var calculate = function(hourhand, minutehand) {
+  if ()
 
 };
 
