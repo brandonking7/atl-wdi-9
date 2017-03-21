@@ -15,6 +15,7 @@ var getGif = function(event) {
   });
 };
 
+
 var saveGif = function(event) {
   var url = $('.image-jumbotron').attr('src');
   console.log(url)

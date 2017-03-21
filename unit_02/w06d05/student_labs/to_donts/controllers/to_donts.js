@@ -8,12 +8,6 @@ res.render('index', {
   });
 });
 
-router.get('/:id', function(req, res) {
-  res.render('show', {
-    item: data.seededToDonts[req.params.id]
-  });
-});
-
 router.post('/', function(req, res) {
   var newToDont = {
     decription: req.body.decription,
@@ -22,5 +16,12 @@ router.post('/', function(req, res) {
   data.seededToDonts.push(newToDont);
   res.redirect('/to_donts');
 });
+
+router.get('/:id', function(req, res) {
+  res.render('show', {
+    item: data.seededToDonts[req.params.id]
+  });
+});
+
 
 module.exports = router;
