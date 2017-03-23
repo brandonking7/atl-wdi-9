@@ -29,7 +29,7 @@ function loginUser(req, res, next) {
 }
 
 function authorize(req, res, next) {
-  var currentUser = req.seesion.currentUser
+  var currentUser = req.session.currentUser
 
   var seesionStillValid = req.session.expirationTime > Date.now();
 

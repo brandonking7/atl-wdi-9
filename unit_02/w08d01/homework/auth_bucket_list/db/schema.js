@@ -38,6 +38,6 @@ var ListModel = mongoose.model('List', ListSchema);
 
 //export List below
 module.exports = {
-  User: UserModel
+  User: UserModel,
   List: ListModel
 };
