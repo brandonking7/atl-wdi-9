@@ -3,13 +3,18 @@
 //======================
 //require express, mongoose, Donut schema, user
 var express = require("express");
+mongoose.connect('mongodb://localhost/donut_store');
 var router = express.Router();
 var mongoose = require("mongoose");
-var Donut = require("../models/products.js");
+var Donut = require("../models/donuts.js");
 
 
-router.get('/newproducts', function(req, res) {
+// Use native promises
+mongoose.Promise = global.Promise;
 
+router.get('/', function(req, res) {
+
+// create new PRODUCTS
 	var newProducts = [
 			{
 					name: "Sprinkles",

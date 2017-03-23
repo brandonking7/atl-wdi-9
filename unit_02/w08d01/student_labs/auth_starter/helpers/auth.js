@@ -1,6 +1,7 @@
 var User = require('../models/user.js');
 var bcrypt = require('bcrypt');
 
+
 function createSecure(req, res, next) {
   var password = req.body.password;
 
@@ -28,6 +29,15 @@ function loginUser(req, res, next) {
 }
 
 function authorize(req, res, next) {
+  var currentUser = req.seesion.currentUser
+
+  var seesionStillValid = req.session.expirationTime > Date.now();
+
+  if (!currentUser || currentUser._id !== req.params.id || !seesionStillValid) {
+
+  } else {
+    next()
+  }
 
 };
 

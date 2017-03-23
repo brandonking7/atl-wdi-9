@@ -7,7 +7,7 @@ $(function() {
      $('.image-jumbotron').attr('src', data.data.image_url);
    });
  })
- 
+
  $('.save-gif').click(saveGif)
  $('.saved-gifs').click(getSavedGifs)
 

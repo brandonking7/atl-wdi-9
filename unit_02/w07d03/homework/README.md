@@ -22,15 +22,43 @@ Let's consider an app we want to make, called Senior Paws. Senior Paws is an app
 Data Modeling Round 2! Take a look at each of the app descriptions below. For each description:
   1. Create a data model for the app by listing at least two relevant
 entities/abstractions (e.g. Senior Paws app, above) that the app might use, and list properties that make sense for that use case. You *don't* have to list all of them.
+
+```
+-name
+-species
+```
+
   1. Create Javascript objects of those entities and assign what data type the _value_ of those properties should be
+
+```
+name: String
+species: String
+```
+
   1. Give an example of a relationship of the model. Keep in mind, not _everything_ has to be connected to _everything_.
+
+```
+name: "Roofy"
+species: "Labrador"
+```
 
 ### 1. Ultra E-mail App
 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
+
 ```
-Write your answer here or in a separate js file.
+-id
+-name
+-email
+
+id: Number
+name: String
+email: String
+
+id: 52372301112809
+name: "Randy"
+email: "randy@aol.com"
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +67,20 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+var RadioStation = new Schema {
+  artist: String,
+  song: String,
+  genre: String,
+  popularity: Number
+  playlist: [Playlist]
+
+}
+
+
+
+var Playlist = new Schema {
+
+}
 ```
 
 ### 3. Rock Concert App
@@ -47,12 +88,24 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+var con
+-id
+-band
+-tourDate
+-ticketPurchasing
+-nextShow
+
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
+
+-id
+-coffeeshops []
+-menu
+-drinks
+
 
 ### 5. Team Tracker App
 
