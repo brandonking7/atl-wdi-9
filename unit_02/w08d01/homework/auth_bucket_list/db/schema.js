@@ -5,7 +5,8 @@ mongoose.Promise = global.Promise;
 
 //add ListSchema here
 var ListSchema = new Schema({
-
+  name: String,
+  completed: Boolean
 });
 
 var UserSchema = new Schema({
@@ -30,7 +31,7 @@ UserSchema.pre('save', function(next) {
 });
 
 var UserModel = mongoose.model('User', UserSchema);
-
+var ListModel = mongoose.model('List', ListSchema);
 
 //var ListModel model
 //your code
@@ -38,4 +39,5 @@ var UserModel = mongoose.model('User', UserSchema);
 //export List below
 module.exports = {
   User: UserModel
+  List: ListModel
 };
