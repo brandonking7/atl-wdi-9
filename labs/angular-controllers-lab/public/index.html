@@ -5,9 +5,34 @@
     <title></title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/todosController.js"></script>
+    <script src="js/productsController.js"></script>
   </head>
   <body>
-    {{'I ' + 'am ' + 'a ' + 'working ' + 'Angular.js ' + 'app!' }}
+    <div ng-controller="ProductsController as stuffs">
+      <ul>
+        <li ng-repeat="stuff in stuffs.all | orderBy: '-price' ">Product Name: {{stuff.name}} | Price: {{stuff.price | currency}} | DateAdded: {{stuff.dateAdded | date}}</li>
+      </ul>
+      <form ng-submit="stuffs.add()">
+        <input type="text" placeholder="Add product name" ng-model="stuffs.newStuff.name">
+        <input type="number" placeholder="Add product price" ng-model="stuffs.newStuff.price">
+        <input type="date" placeholder="Add this new product" ng-model="stuffs.newStuff.dateAdded">
+        <input type="submit" value="Add New Product">
+      </form>
+      <div ng-controller="ReviewsController as reviews">
+        <p>Displaying {{stuffs.all.length}} products across {{reviews.productCategories.length}} categories.</p>
+        <ul ng-repeat="review in reviews.productCategories">
+          <li>{{review}}</li>
+        </ul>
+        <button ng-click="toggleCustom()">Custom</button>
+       <span ng-hide="custom">
+           <p>Displaying {{stuffs.all.length}} products across {{reviews.productCategories.length}} categories.</p>
+       </span>
+       <span ng-show="custom">
+         <p>Displaying {{stuffs.all.length}} products across {{reviews.productCategories.length}} categories.</p>
+       </span>
+
+
+      </div>
+   </div>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 ## Let's build an online store app!
 
---- 
+---
 
 ### Setup:
 1. Run `npm install`
@@ -12,7 +12,7 @@
 
 ### Display our products:
 
-1. Now that you have a running app, we'll want to add some more useful functionality. Create a new controller in  named `ProductsController` and add it to the 'storeApp` module. Make sure to require this new 
+1. Now that you have a running app, we'll want to add some more useful functionality. Create a new controller in  named `ProductsController` and add it to the 'storeApp` module. Make sure to require this new
 
 2. We'll want to display all of our products on the page when our application loads. Inside of the `ProductsController`, let's create a new variable `this.products` and set it equal to the an array of products:
 
@@ -27,7 +27,7 @@ this.products = [
 ]
 ```
 
-3. Now we'll want to display each one of these products on the page when it is displayed! We'll want to create a new `<div>` tag for each one of these products and then display each piece of information like this: 
+3. Now we'll want to display each one of these products on the page when it is displayed! We'll want to create a new `<div>` tag for each one of these products and then display each piece of information like this:
 
 `>>> Product Name: Surface Book | Price: 1500.43 | Date Added: 1490929458881`
 We'll have to use the built-in Angular directive `ngRepeat` to accomplish this.
@@ -52,7 +52,7 @@ We'll have to use the built-in Angular directive `ngRepeat` to accomplish this.
 
 3. When we click the `Submit` button, we should automatically see our new `product` added to the products on the page!
 
---- 
+---
 
 ### Add Product Categories:
 
@@ -60,7 +60,7 @@ We'll have to use the built-in Angular directive `ngRepeat` to accomplish this.
 
 2. This controller should display on the page, _nested inside_ of `ProductsController`
 
-3. Let's create a new set of Product Categories inside this new controller that looks like this: 
+3. Let's create a new set of Product Categories inside this new controller that looks like this:
 
 ```javascript
 this.productCategories = [
@@ -74,12 +74,10 @@ this.productCategories = [
 
 	- When we add a new product, the number of products should increase by 1.
 
---- 
+---
 
-### BONUS: 
+### BONUS:
 
 1. Sort the `products` by `price` when the page loads, regardless of how they are organized in our array. When we add a new product, it should automatically show up, sorted by price with all of the previously existing products.
 
-2. Add a button that will show or hide the `Product Categories` when you click it. 
-
-
+2. Add a button that will show or hide the `Product Categories` when you click it.

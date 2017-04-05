@@ -17,5 +17,9 @@
     "morgan": "~1.6.1",
     "nodemon": "^1.11.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "description": ""
 }

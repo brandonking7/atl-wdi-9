@@ -36,7 +36,7 @@ app.use(session({
 
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
-app.use('/users/:id/lists', listsController);
+app.use('/users/:userId/lists', listsController);
 
 //add the third app.use here (check readme for which route)
 

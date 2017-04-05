@@ -15,5 +15,9 @@
     "mongoose": "^4.0.7",
     "morgan": "~1.6.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "description": "--- title: Angular $http type: Lab duration: \"1:25\" creator:     name: Micah Rich     city: LA adapted:     name: Marc Wright     city: WDIR competencies: Front-end frameworks ---",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": ""
 }
