@@ -5,6 +5,7 @@ function CriminalsController(CriminalsService) {
 
 	// WHAT THIS CONTROLLER HAS / DOES THAT IS CONNECTED TO THE VIEW
 	vm.criminals = [];
+	vm.deleteCriminalFromCtrl = deleteCriminalFromCtrl;
 	vm.loading = true;
 
 
@@ -14,7 +15,7 @@ function CriminalsController(CriminalsService) {
 	function activate() {
 		loadAllCriminals();
 	}
-	
+
 
 	// HOW IT DOES STUFF
 	function loadAllCriminals() {
@@ -23,6 +24,16 @@ function CriminalsController(CriminalsService) {
 			.then(function resolve(response) {
 				vm.criminals = response.data.criminals;
 				vm.loading = false;
+			});
+	}
+
+	function deleteCriminalFromCtrl(criminal) {
+		console.log(criminal)
+		CriminalsService
+			.deleteCriminalFromService(criminal)
+			.then(function(response){
+				var index = vm.criminals.indexOf(criminal);
+				vm.criminals.splice(index, 1);
 			});
 	}
 }
