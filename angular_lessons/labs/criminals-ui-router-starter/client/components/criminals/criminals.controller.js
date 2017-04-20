@@ -22,7 +22,8 @@ function CriminalsController(CriminalsService) {
 		CriminalsService
 			.loadAll()
 			.then(function resolve(response) {
-				vm.criminals = response.data.criminals;
+				console.log(response)
+				vm.criminals = response.data.criminals; // array of criminals
 				vm.loading = false;
 			});
 	}
